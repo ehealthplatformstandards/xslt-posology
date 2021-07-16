@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kmehrmessage xmlns="http://www.ehealth.fgov.be/standards/kmehr/schema/v1"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://www.ehealth.fgov.be/standards/kmehr/schema/v1 kmehr_elements.xsd">
+   <header>
+      <standard>
+         <cd S="CD-STANDARD" SV="1.20">20161201</cd>
+      </standard>
+      <id SV="1.0" S="ID-KMEHR">10259036006.daktari2020-11-16T12:20:13.426Z</id>
+      <date>2020-11-16</date>
+      <time>13:20:13</time>
+      <sender>
+         <hcparty>
+            <id SV="1.0" S="ID-HCPARTY">10259036006</id>
+            <id SV="1.0" S="INSS">83092837509</id>
+            <cd S="CD-HCPARTY" SV="1.11">persphysician</cd>
+            <firstname>test</firstname>
+            <familyname>test</familyname>
+         </hcparty>
+      </sender>
+      <recipient>
+         <hcparty>
+            <id SV="1.0" S="ID-HCPARTY">1990001916</id>
+            <cd S="CD-HCPARTY" SV="1.11">application</cd>
+            <name>VITALINK</name>
+         </hcparty>
+      </recipient>
+   </header>
+   <folder>
+      <id SV="1.0" S="ID-KMEHR">1</id>
+      <patient>
+         <id SV="1.0" S="ID-PATIENT">83061828587</id>
+         <id S="LOCAL" SL="daktari" SV="1.15-rc1-SNAPSHOT">6404dcf9-942a-4c0e-9397-910cc3e661d4</id>
+         <firstname>Bart</firstname>
+         <familyname>Cornelissen</familyname>
+         <birthdate>
+            <date>1983-06-18</date>
+         </birthdate>
+         <sex>
+            <cd S="CD-SEX" SV="1.1">male</cd>
+         </sex>
+         <address>
+            <cd S="CD-ADDRESS" SV="1.1">home</cd>
+            <country>
+               <cd S="CD-FED-COUNTRY" SV="1.2">be</cd>
+            </country>
+            <zip>3530</zip>
+            <city>Houthalen-Helchteren</city>
+            <street/>
+            <housenumber/>
+         </address>
+      </patient>
+      <transaction>
+         <id SV="1.0" S="ID-KMEHR">1</id>
+         <id S="LOCAL" SL="vitalinkuri" SV="1.0">/subject/83061828587/medication-scheme</id>
+         <cd S="CD-TRANSACTION" SV="1.10">medicationscheme</cd>
+         <date>2020-11-16</date>
+         <time>13:20:13</time>
+         <author>
+            <hcparty>
+               <id SV="1.0" S="ID-HCPARTY">1990001916</id>
+               <cd S="CD-HCPARTY" SV="1.11">application</cd>
+               <name>VITALINK</name>
+            </hcparty>
+            <hcparty>
+               <id SV="1.0" S="ID-HCPARTY">10259036006</id>
+               <id SV="1.0" S="INSS">83092837509</id>
+               <cd S="CD-HCPARTY" SV="1.11">persphysician</cd>
+               <firstname>test</firstname>
+               <familyname>test</familyname>
+            </hcparty>
+         </author>
+         <iscomplete>true</iscomplete>
+         <isvalidated>true</isvalidated>
+         <version>51</version>
+      </transaction>
+      <transaction>
+         <id SV="1.0" S="ID-KMEHR">2</id>
+         <cd S="CD-TRANSACTION" SV="1.10">medicationschemeelement</cd>
+         <date>2020-11-16</date>
+         <time>13:20:13</time>
+         <author>
+            <hcparty>
+               <id SV="1.0" S="ID-HCPARTY">10259036006</id>
+               <id SV="1.0" S="INSS">83092837509</id>
+               <cd S="CD-HCPARTY" SV="1.11">persphysician</cd>
+               <firstname>test</firstname>
+               <familyname>test</familyname>
+            </hcparty>
+         </author>
+         <iscomplete>true</iscomplete>
+         <isvalidated>true</isvalidated>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">1</id>
+            <cd S="CD-ITEM" SV="1.11">healthcareelement</cd>
+            <content>
+               <cd SV="1.8" S="CD-ITEM-MS">adaptationflag</cd>
+               <cd SV="1.0" S="CD-MS-ADAPTATION">medication</cd>
+            </content>
+         </item>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">2</id>
+            <cd S="CD-ITEM" SV="1.11">medication</cd>
+            <content>
+               <medicinalproduct>
+                  <intendedcd S="CD-DRUG-CNK" SV="2020">2083491</intendedcd>
+                  <intendedname>Omacor caps 28x 1 g</intendedname>
+               </medicinalproduct>
+            </content>
+            <beginmoment>
+               <date>2020-11-18</date>
+            </beginmoment>
+            <temporality>
+               <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+            </temporality>
+            <frequency>
+               <periodicity>
+                  <cd S="CD-PERIODICITY" SV="1.1">DT</cd>
+               </periodicity>
+            </frequency>
+            <regimen>
+               <daynumber>1</daynumber>
+               <daytime>
+                  <dayperiod>
+                     <cd S="CD-DAYPERIOD" SV="1.1">beforebreakfast</cd>
+                  </dayperiod>
+               </daytime>
+               <quantity>
+                  <decimal>1</decimal>
+                  <unit>
+                     <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00004</cd>
+                  </unit>
+               </quantity>
+            </regimen>
+            <route>
+               <cd S="CD-DRUG-ROUTE" SV="2.0">00064</cd>
+            </route>
+            <instructionforpatient L="nl">===EVSREF:101===STAP:1===</instructionforpatient>
+         </item>
+      </transaction>
+      <transaction>
+         <id SV="1.0" S="ID-KMEHR">3</id>
+         <cd S="CD-TRANSACTION" SV="1.10">medicationschemeelement</cd>
+         <date>2020-11-16</date>
+         <time>13:20:13</time>
+         <author>
+            <hcparty>
+               <id SV="1.0" S="ID-HCPARTY">10259036006</id>
+               <id SV="1.0" S="INSS">83092837509</id>
+               <cd S="CD-HCPARTY" SV="1.11">persphysician</cd>
+               <firstname>test</firstname>
+               <familyname>test</familyname>
+            </hcparty>
+         </author>
+         <iscomplete>true</iscomplete>
+         <isvalidated>true</isvalidated>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">1</id>
+            <cd S="CD-ITEM" SV="1.11">healthcareelement</cd>
+            <content>
+               <cd SV="1.8" S="CD-ITEM-MS">adaptationflag</cd>
+               <cd SV="1.0" S="CD-MS-ADAPTATION">medication</cd>
+            </content>
+         </item>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">2</id>
+            <cd S="CD-ITEM" SV="1.11">medication</cd>
+            <content>
+               <medicinalproduct>
+                  <intendedcd S="CD-DRUG-CNK" SV="2020">2557155</intendedcd>
+                  <intendedname>Pantomed tab EC 28x 40mg</intendedname>
+               </medicinalproduct>
+            </content>
+            <beginmoment>
+               <date>2020-11-18</date>
+            </beginmoment>
+            <temporality>
+               <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+            </temporality>
+            <frequency>
+               <periodicity>
+                  <cd S="CD-PERIODICITY" SV="1.1">D</cd>
+               </periodicity>
+            </frequency>
+            <regimen>
+               <daynumber>1</daynumber>
+               <daytime>
+                  <dayperiod>
+                     <cd S="CD-DAYPERIOD" SV="1.1">beforebreakfast</cd>
+                  </dayperiod>
+               </daytime>
+               <quantity>
+                  <decimal>1</decimal>
+                  <unit>
+                     <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00005</cd>
+                  </unit>
+               </quantity>
+            </regimen>
+            <route>
+               <cd S="CD-DRUG-ROUTE" SV="2.0">00064</cd>
+            </route>
+         </item>
+      </transaction>
+      <transaction>
+         <id SV="1.0" S="ID-KMEHR">4</id>
+         <cd S="CD-TRANSACTION" SV="1.10">medicationschemeelement</cd>
+         <date>2020-11-16</date>
+         <time>13:20:13</time>
+         <author>
+            <hcparty>
+               <id SV="1.0" S="ID-HCPARTY">10259036006</id>
+               <id SV="1.0" S="INSS">83092837509</id>
+               <cd S="CD-HCPARTY" SV="1.11">persphysician</cd>
+               <firstname>test</firstname>
+               <familyname>test</familyname>
+            </hcparty>
+         </author>
+         <iscomplete>true</iscomplete>
+         <isvalidated>true</isvalidated>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">1</id>
+            <cd S="CD-ITEM" SV="1.11">healthcareelement</cd>
+            <content>
+               <cd SV="1.8" S="CD-ITEM-MS">adaptationflag</cd>
+               <cd SV="1.0" S="CD-MS-ADAPTATION">medication</cd>
+            </content>
+         </item>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">2</id>
+            <cd S="CD-ITEM" SV="1.11">medication</cd>
+            <content>
+               <medicinalproduct>
+                  <intendedcd S="CD-DRUG-CNK" SV="2020">0613364</intendedcd>
+                  <intendedname>Amoxicilline EG caps 16x 500mg</intendedname>
+               </medicinalproduct>
+            </content>
+            <beginmoment>
+               <date>2020-11-18</date>
+            </beginmoment>
+            <endmoment>
+               <date>2020-11-28</date>
+            </endmoment>
+            <temporality>
+               <cd S="CD-TEMPORALITY" SV="1.0">acute</cd>
+            </temporality>
+            <frequency>
+               <periodicity>
+                  <cd S="CD-PERIODICITY" SV="1.1">D</cd>
+               </periodicity>
+            </frequency>
+            <regimen>
+               <daynumber>1</daynumber>
+               <daytime>
+                  <dayperiod>
+                     <cd S="CD-DAYPERIOD" SV="1.1">morning</cd>
+                  </dayperiod>
+               </daytime>
+               <quantity>
+                  <decimal>5</decimal>
+                  <unit>
+                     <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00016</cd>
+                  </unit>
+               </quantity>
+               <daynumber>1</daynumber>
+               <daytime>
+                  <dayperiod>
+                     <cd S="CD-DAYPERIOD" SV="1.1">afterlunch</cd>
+                  </dayperiod>
+               </daytime>
+               <quantity>
+                  <decimal>5</decimal>
+                  <unit>
+                     <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00016</cd>
+                  </unit>
+               </quantity>
+               <daynumber>1</daynumber>
+               <daytime>
+                  <dayperiod>
+                     <cd S="CD-DAYPERIOD" SV="1.1">afterdinner</cd>
+                  </dayperiod>
+               </daytime>
+               <quantity>
+                  <decimal>5</decimal>
+                  <unit>
+                     <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00016</cd>
+                  </unit>
+               </quantity>
+            </regimen>
+            <route>
+               <cd S="CD-DRUG-ROUTE" SV="2.0">00064</cd>
+            </route>
+         </item>
+      </transaction>
+      <transaction>
+         <id SV="1.0" S="ID-KMEHR">5</id>
+         <cd S="CD-TRANSACTION" SV="1.10">medicationschemeelement</cd>
+         <date>2020-11-16</date>
+         <time>13:20:13</time>
+         <author>
+            <hcparty>
+               <id SV="1.0" S="ID-HCPARTY">10259036006</id>
+               <id SV="1.0" S="INSS">83092837509</id>
+               <cd S="CD-HCPARTY" SV="1.11">persphysician</cd>
+               <firstname>test</firstname>
+               <familyname>test</familyname>
+            </hcparty>
+         </author>
+         <iscomplete>true</iscomplete>
+         <isvalidated>true</isvalidated>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">1</id>
+            <cd S="CD-ITEM" SV="1.11">healthcareelement</cd>
+            <content>
+               <cd SV="1.8" S="CD-ITEM-MS">adaptationflag</cd>
+               <cd SV="1.0" S="CD-MS-ADAPTATION">medication</cd>
+            </content>
+         </item>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">2</id>
+            <cd S="CD-ITEM" SV="1.11">medication</cd>
+            <content>
+               <medicinalproduct>
+                  <intendedcd S="CD-DRUG-CNK" SV="2020">3380201</intendedcd>
+                  <intendedname>Humira patroon spuit s.c. 2 x 40 mg/0,4 ml</intendedname>
+               </medicinalproduct>
+            </content>
+            <beginmoment>
+               <date>2020-11-18</date>
+            </beginmoment>
+            <temporality>
+               <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+            </temporality>
+            <frequency>
+               <periodicity>
+                  <cd S="CD-PERIODICITY" SV="1.1">W</cd>
+               </periodicity>
+            </frequency>
+            <regimen>
+               <daynumber>1</daynumber>
+               <daytime>
+                  <dayperiod>
+                     <cd S="CD-DAYPERIOD" SV="1.1">morning</cd>
+                  </dayperiod>
+               </daytime>
+               <quantity>
+                  <decimal>1</decimal>
+                  <unit>
+                     <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00022</cd>
+                  </unit>
+               </quantity>
+            </regimen>
+            <route>
+               <cd S="CD-DRUG-ROUTE" SV="2.0">00068</cd>
+            </route>
+         </item>
+      </transaction>
+      <transaction>
+         <id SV="1.0" S="ID-KMEHR">6</id>
+         <cd S="CD-TRANSACTION" SV="1.10">medicationschemeelement</cd>
+         <date>2020-11-16</date>
+         <time>13:20:13</time>
+         <author>
+            <hcparty>
+               <id SV="1.0" S="ID-HCPARTY">10259036006</id>
+               <id SV="1.0" S="INSS">83092837509</id>
+               <cd S="CD-HCPARTY" SV="1.11">persphysician</cd>
+               <firstname>test</firstname>
+               <familyname>test</familyname>
+            </hcparty>
+         </author>
+         <iscomplete>true</iscomplete>
+         <isvalidated>true</isvalidated>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">1</id>
+            <cd S="CD-ITEM" SV="1.11">healthcareelement</cd>
+            <content>
+               <cd SV="1.8" S="CD-ITEM-MS">adaptationflag</cd>
+               <cd SV="1.0" S="CD-MS-ADAPTATION">medication</cd>
+            </content>
+         </item>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">2</id>
+            <cd S="CD-ITEM" SV="1.11">medication</cd>
+            <content>
+               <medicinalproduct>
+                  <intendedcd S="CD-DRUG-CNK" SV="2020">2225597</intendedcd>
+                  <intendedname>Aranesp patr SureClick 150 կ0,3ml</intendedname>
+               </medicinalproduct>
+            </content>
+            <beginmoment>
+               <date>2020-11-18</date>
+            </beginmoment>
+            <temporality>
+               <cd S="CD-TEMPORALITY" SV="1.0">acute</cd>
+            </temporality>
+            <frequency>
+               <periodicity>
+                  <cd S="CD-PERIODICITY" SV="1.1">M</cd>
+               </periodicity>
+            </frequency>
+            <regimen>
+               <daynumber>1</daynumber>
+               <daytime>
+                  <dayperiod>
+                     <cd S="CD-DAYPERIOD" SV="1.1">morning</cd>
+                  </dayperiod>
+               </daytime>
+               <quantity>
+                  <decimal>1</decimal>
+                  <unit>
+                     <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00022</cd>
+                  </unit>
+               </quantity>
+            </regimen>
+            <route>
+               <cd S="CD-DRUG-ROUTE" SV="2.0">00068</cd>
+            </route>
+         </item>
+      </transaction>
+      <transaction>
+         <id SV="1.0" S="ID-KMEHR">7</id>
+         <cd S="CD-TRANSACTION" SV="1.10">medicationschemeelement</cd>
+         <date>2020-11-16</date>
+         <time>13:20:13</time>
+         <author>
+            <hcparty>
+               <id SV="1.0" S="ID-HCPARTY">10259036006</id>
+               <id SV="1.0" S="INSS">83092837509</id>
+               <cd S="CD-HCPARTY" SV="1.11">persphysician</cd>
+               <firstname>test</firstname>
+               <familyname>test</familyname>
+            </hcparty>
+         </author>
+         <iscomplete>true</iscomplete>
+         <isvalidated>true</isvalidated>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">1</id>
+            <cd S="CD-ITEM" SV="1.11">healthcareelement</cd>
+            <content>
+               <cd SV="1.8" S="CD-ITEM-MS">adaptationflag</cd>
+               <cd SV="1.0" S="CD-MS-ADAPTATION">medication</cd>
+            </content>
+         </item>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">2</id>
+            <cd S="CD-ITEM" SV="1.11">medication</cd>
+            <content>
+               <medicinalproduct>
+                  <intendedcd S="CD-DRUG-CNK" SV="2020">0639880</intendedcd>
+                  <intendedname>Monuril gran zakjes 3 g</intendedname>
+               </medicinalproduct>
+            </content>
+            <beginmoment>
+               <date>2020-11-18</date>
+            </beginmoment>
+            <endmoment>
+               <date>2020-11-18</date>
+            </endmoment>
+            <temporality>
+               <cd S="CD-TEMPORALITY" SV="1.0">oneshot</cd>
+            </temporality>
+            <frequency>
+               <periodicity>
+                  <cd S="CD-PERIODICITY" SV="1.1">D</cd>
+               </periodicity>
+            </frequency>
+            <regimen>
+               <daynumber>1</daynumber>
+               <daytime>
+                  <dayperiod>
+                     <cd S="CD-DAYPERIOD" SV="1.1">beforebreakfast</cd>
+                  </dayperiod>
+               </daytime>
+               <quantity>
+                  <decimal>1</decimal>
+                  <unit>
+                     <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">mg</cd>
+                  </unit>
+               </quantity>
+            </regimen>
+            <route>
+               <cd S="CD-DRUG-ROUTE" SV="2.0">00064</cd>
+            </route>
+         </item>
+      </transaction>
+      <transaction>
+         <id SV="1.0" S="ID-KMEHR">8</id>
+         <cd S="CD-TRANSACTION" SV="1.10">medicationschemeelement</cd>
+         <date>2020-11-16</date>
+         <time>13:20:13</time>
+         <author>
+            <hcparty>
+               <id SV="1.0" S="ID-HCPARTY">10259036006</id>
+               <id SV="1.0" S="INSS">83092837509</id>
+               <cd S="CD-HCPARTY" SV="1.11">persphysician</cd>
+               <firstname>test</firstname>
+               <familyname>test</familyname>
+            </hcparty>
+         </author>
+         <iscomplete>true</iscomplete>
+         <isvalidated>true</isvalidated>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">1</id>
+            <cd S="CD-ITEM" SV="1.11">healthcareelement</cd>
+            <content>
+               <cd SV="1.8" S="CD-ITEM-MS">adaptationflag</cd>
+               <cd SV="1.0" S="CD-MS-ADAPTATION">medication</cd>
+            </content>
+         </item>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">2</id>
+            <cd S="CD-ITEM" SV="1.11">medication</cd>
+            <content>
+               <medicinalproduct>
+                  <intendedcd S="CD-DRUG-CNK" SV="2020">0119065</intendedcd>
+                  <intendedname>Marcoumar tab 25x 3mg</intendedname>
+               </medicinalproduct>
+            </content>
+            <beginmoment>
+               <date>2020-11-18</date>
+            </beginmoment>
+            <temporality>
+               <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+            </temporality>
+            <posology>
+               <text L="fr">*converted* lundi: 0.5 compr. (avant le petit-déjeuner)
+jeudi: 0.5 compr. (avant le petit-déjeuner)
+samedi: 0.5 compr. (avant le petit-déjeuner)
+par semaine</text>
+            </posology>
+            <route>
+               <cd S="CD-DRUG-ROUTE" SV="2.0">00064</cd>
+            </route>
+         </item>
+      </transaction>
+      <transaction>
+         <id SV="1.0" S="ID-KMEHR">9</id>
+         <cd S="CD-TRANSACTION" SV="1.10">medicationschemeelement</cd>
+         <date>2020-11-16</date>
+         <time>13:20:13</time>
+         <author>
+            <hcparty>
+               <id SV="1.0" S="ID-HCPARTY">10259036006</id>
+               <id SV="1.0" S="INSS">83092837509</id>
+               <cd S="CD-HCPARTY" SV="1.11">persphysician</cd>
+               <firstname>test</firstname>
+               <familyname>test</familyname>
+            </hcparty>
+         </author>
+         <iscomplete>true</iscomplete>
+         <isvalidated>true</isvalidated>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">1</id>
+            <cd S="CD-ITEM" SV="1.11">healthcareelement</cd>
+            <content>
+               <cd SV="1.8" S="CD-ITEM-MS">adaptationflag</cd>
+               <cd SV="1.0" S="CD-MS-ADAPTATION">medication</cd>
+            </content>
+         </item>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">2</id>
+            <cd S="CD-ITEM" SV="1.11">medication</cd>
+            <content>
+               <medicinalproduct>
+                  <intendedcd S="CD-DRUG-CNK" SV="2020">1278308</intendedcd>
+                  <intendedname>Durogesic transd syst 5x 50 կu</intendedname>
+               </medicinalproduct>
+            </content>
+            <beginmoment>
+               <date>2020-11-18</date>
+            </beginmoment>
+            <temporality>
+               <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+            </temporality>
+            <posology>
+               <text L="fr">*converted* jour 1: 1 patr. (heure du coucher)
+jour 4: 1 patr. (heure du coucher)
+jour 6: 1 patr. (heure du coucher)
+par 6 jours</text>
+            </posology>
+            <route>
+               <cd S="CD-DRUG-ROUTE" SV="2.0">00012</cd>
+            </route>
+         </item>
+      </transaction>
+      <transaction>
+         <id SV="1.0" S="ID-KMEHR">10</id>
+         <cd S="CD-TRANSACTION" SV="1.10">medicationschemeelement</cd>
+         <date>2020-11-16</date>
+         <time>13:20:13</time>
+         <author>
+            <hcparty>
+               <id SV="1.0" S="ID-HCPARTY">10259036006</id>
+               <id SV="1.0" S="INSS">83092837509</id>
+               <cd S="CD-HCPARTY" SV="1.11">persphysician</cd>
+               <firstname>test</firstname>
+               <familyname>test</familyname>
+            </hcparty>
+         </author>
+         <iscomplete>true</iscomplete>
+         <isvalidated>true</isvalidated>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">1</id>
+            <cd S="CD-ITEM" SV="1.11">healthcareelement</cd>
+            <content>
+               <cd SV="1.8" S="CD-ITEM-MS">adaptationflag</cd>
+               <cd SV="1.0" S="CD-MS-ADAPTATION">medication</cd>
+            </content>
+         </item>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">2</id>
+            <cd S="CD-ITEM" SV="1.11">medication</cd>
+            <content>
+               <medicinalproduct>
+                  <intendedcd S="CD-DRUG-CNK" SV="2020">0895540</intendedcd>
+                  <intendedname>Medrol compr. (deelb.) 20x 32mg</intendedname>
+               </medicinalproduct>
+            </content>
+            <beginmoment>
+               <date>2020-11-18</date>
+            </beginmoment>
+            <endmoment>
+               <date>2020-11-20</date>
+            </endmoment>
+            <temporality>
+               <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+            </temporality>
+            <frequency>
+               <periodicity>
+                  <cd S="CD-PERIODICITY" SV="1.1">D</cd>
+               </periodicity>
+            </frequency>
+            <regimen>
+               <daynumber>1</daynumber>
+               <daytime>
+                  <dayperiod>
+                     <cd S="CD-DAYPERIOD" SV="1.1">duringbreakfast</cd>
+                  </dayperiod>
+               </daytime>
+               <quantity>
+                  <decimal>1</decimal>
+                  <unit>
+                     <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00005</cd>
+                  </unit>
+               </quantity>
+            </regimen>
+            <route>
+               <cd S="CD-DRUG-ROUTE" SV="2.0">00064</cd>
+            </route>
+         </item>
+      </transaction>
+      <transaction>
+         <id SV="1.0" S="ID-KMEHR">11</id>
+         <cd S="CD-TRANSACTION" SV="1.10">medicationschemeelement</cd>
+         <date>2020-11-16</date>
+         <time>13:20:13</time>
+         <author>
+            <hcparty>
+               <id SV="1.0" S="ID-HCPARTY">10259036006</id>
+               <id SV="1.0" S="INSS">83092837509</id>
+               <cd S="CD-HCPARTY" SV="1.11">persphysician</cd>
+               <firstname>test</firstname>
+               <familyname>test</familyname>
+            </hcparty>
+         </author>
+         <iscomplete>true</iscomplete>
+         <isvalidated>true</isvalidated>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">1</id>
+            <cd S="CD-ITEM" SV="1.11">healthcareelement</cd>
+            <content>
+               <cd SV="1.8" S="CD-ITEM-MS">adaptationflag</cd>
+               <cd SV="1.0" S="CD-MS-ADAPTATION">medication</cd>
+            </content>
+         </item>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">2</id>
+            <cd S="CD-ITEM" SV="1.11">medication</cd>
+            <content>
+               <medicinalproduct>
+                  <intendedcd S="CD-DRUG-CNK" SV="2020">0895540</intendedcd>
+                  <intendedname>Medrol compr. (deelb.) 20x 32mg</intendedname>
+               </medicinalproduct>
+            </content>
+            <beginmoment>
+               <date>2020-11-21</date>
+            </beginmoment>
+            <endmoment>
+               <date>2020-11-23</date>
+            </endmoment>
+            <temporality>
+               <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+            </temporality>
+            <frequency>
+               <periodicity>
+                  <cd S="CD-PERIODICITY" SV="1.1">D</cd>
+               </periodicity>
+            </frequency>
+            <regimen>
+               <daynumber>1</daynumber>
+               <daytime>
+                  <dayperiod>
+                     <cd S="CD-DAYPERIOD" SV="1.1">duringbreakfast</cd>
+                  </dayperiod>
+               </daytime>
+               <quantity>
+                  <decimal>0.5</decimal>
+                  <unit>
+                     <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00005</cd>
+                  </unit>
+               </quantity>
+            </regimen>
+            <route>
+               <cd S="CD-DRUG-ROUTE" SV="2.0">00064</cd>
+            </route>
+         </item>
+      </transaction>
+      <transaction>
+         <id SV="1.0" S="ID-KMEHR">12</id>
+         <cd S="CD-TRANSACTION" SV="1.10">medicationschemeelement</cd>
+         <date>2020-11-16</date>
+         <time>13:20:13</time>
+         <author>
+            <hcparty>
+               <id SV="1.0" S="ID-HCPARTY">10259036006</id>
+               <id SV="1.0" S="INSS">83092837509</id>
+               <cd S="CD-HCPARTY" SV="1.11">persphysician</cd>
+               <firstname>test</firstname>
+               <familyname>test</familyname>
+            </hcparty>
+         </author>
+         <iscomplete>true</iscomplete>
+         <isvalidated>true</isvalidated>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">1</id>
+            <cd S="CD-ITEM" SV="1.11">healthcareelement</cd>
+            <content>
+               <cd SV="1.8" S="CD-ITEM-MS">adaptationflag</cd>
+               <cd SV="1.0" S="CD-MS-ADAPTATION">medication</cd>
+            </content>
+         </item>
+         <item>
+            <id SV="1.0" S="ID-KMEHR">2</id>
+            <cd S="CD-ITEM" SV="1.11">medication</cd>
+            <content>
+               <medicinalproduct>
+                  <intendedcd S="CD-DRUG-CNK" SV="2020">0895540</intendedcd>
+                  <intendedname>Medrol compr. (deelb.) 20x 32mg</intendedname>
+               </medicinalproduct>
+            </content>
+            <beginmoment>
+               <date>2020-11-24</date>
+            </beginmoment>
+            <endmoment>
+               <date>2020-11-26</date>
+            </endmoment>
+            <temporality>
+               <cd S="CD-TEMPORALITY" SV="1.0">chronic</cd>
+            </temporality>
+            <frequency>
+               <periodicity>
+                  <cd S="CD-PERIODICITY" SV="1.1">D</cd>
+               </periodicity>
+            </frequency>
+            <regimen>
+               <daynumber>1</daynumber>
+               <daytime>
+                  <dayperiod>
+                     <cd S="CD-DAYPERIOD" SV="1.1">duringbreakfast</cd>
+                  </dayperiod>
+               </daytime>
+               <quantity>
+                  <decimal>0.25</decimal>
+                  <unit>
+                     <cd S="CD-ADMINISTRATIONUNIT" SV="1.2">00005</cd>
+                  </unit>
+               </quantity>
+            </regimen>
+            <route>
+               <cd S="CD-DRUG-ROUTE" SV="2.0">00064</cd>
+            </route>
+         </item>
+      </transaction>
+   </folder>
+</kmehrmessage>

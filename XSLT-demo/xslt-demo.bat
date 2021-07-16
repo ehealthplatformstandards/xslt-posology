@@ -1,0 +1,2 @@
+java -cp SaxonHE10-5J/saxon-he-10.5.jar net.sf.saxon.Transform -s:original.xml -xsl:xslt/complex-regimen-to-text.xslt -o:converted-fr.xml lang=fr
+java -cp SaxonHE10-5J/saxon-he-10.5.jar net.sf.saxon.Transform -s:original.xml -xsl:xslt/complex-regimen-to-text.xslt -o:converted-nl.xml lang=nl

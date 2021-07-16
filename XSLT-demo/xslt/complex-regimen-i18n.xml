@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i18n>
+	<!-- TODO Add german translations. -->
+	<day xml:lang="en">day</day>
+	<day xml:lang="nl">dag</day>
+	<day xml:lang="fr">jour</day>
+	<atTime xml:lang="en">at</atTime>
+	<atTime xml:lang="nl">om</atTime>
+	<atTime xml:lang="fr">à</atTime>
+	<converted xml:lang="en">*converted*</converted>
+	<converted xml:lang="nl">*converted*</converted>
+	<converted xml:lang="fr">*converted*</converted>
+	<converted xml:lang="de">*converted*</converted>
+
+	<!--
+		Extracted from https://www.ehealth.fgov.be/standards/kmehr/en/file/xml/aeba03202b3ab722bf0f4e75f2c61138b61ba652?name=cd-dayperiod
+		Find:\t<VALUE>\n\t\t<CODE>(.*)</CODE>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n(.*\n)?\t</VALUE>
+		Replace:\t<dayperiod code="$1" xml:lang="$2">$3</dayperiod>\n\t<dayperiod code="$1" xml:lang="$4">$5</dayperiod>\n\t<dayperiod code="$1" xml:lang="$6">$7</dayperiod>\n\t<dayperiod code="$1" xml:lang="$8">$9</dayperiod>
+		Replaced all occurences of " (deprecated)" afterwards.
+	-->
+	<dayperiod code="morning" xml:lang="en">morning</dayperiod>
+	<dayperiod code="morning" xml:lang="fr">matin</dayperiod>
+	<dayperiod code="morning" xml:lang="nl">'s morgens</dayperiod>
+	<dayperiod code="morning" xml:lang="de">Vormittag</dayperiod>
+	<dayperiod code="afternoon" xml:lang="en">afternoon</dayperiod>
+	<dayperiod code="afternoon" xml:lang="fr">après-midi</dayperiod>
+	<dayperiod code="afternoon" xml:lang="nl">namiddag</dayperiod>
+	<dayperiod code="afternoon" xml:lang="de">Nachmittag</dayperiod>
+	<dayperiod code="evening" xml:lang="en">evening</dayperiod>
+	<dayperiod code="evening" xml:lang="fr">soir</dayperiod>
+	<dayperiod code="evening" xml:lang="nl">avond</dayperiod>
+	<dayperiod code="evening" xml:lang="de">Abend</dayperiod>
+	<dayperiod code="night" xml:lang="en">night</dayperiod>
+	<dayperiod code="night" xml:lang="fr">nuit</dayperiod>
+	<dayperiod code="night" xml:lang="nl">nacht</dayperiod>
+	<dayperiod code="night" xml:lang="de">Nacht</dayperiod>
+	<dayperiod code="beforelunch" xml:lang="en">before lunch (from lat. ante cibus diurnus)</dayperiod>
+	<dayperiod code="beforelunch" xml:lang="fr">avant le repas du midi</dayperiod>
+	<dayperiod code="beforelunch" xml:lang="nl">voor het middagmaal</dayperiod>
+	<dayperiod code="beforelunch" xml:lang="de">vor dem Mittagessen </dayperiod>
+	<dayperiod code="beforebreakfast" xml:lang="en">before breakfast (from lat. ante cibus matutinus)</dayperiod>
+	<dayperiod code="beforebreakfast" xml:lang="fr">avant le petit-déjeuner</dayperiod>
+	<dayperiod code="beforebreakfast" xml:lang="nl">voor het ontbijt</dayperiod>
+	<dayperiod code="beforebreakfast" xml:lang="de">vor dem Frühstück </dayperiod>
+	<dayperiod code="beforedinner" xml:lang="en">before dinner (from lat. ante cibus vespertinus)</dayperiod>
+	<dayperiod code="beforedinner" xml:lang="fr">avant le repas du soir</dayperiod>
+	<dayperiod code="beforedinner" xml:lang="nl">voor het avondmaal</dayperiod>
+	<dayperiod code="beforedinner" xml:lang="de">vor dem Abendessen</dayperiod>
+	<dayperiod code="thehourofsleep" xml:lang="en">the hour of sleep (e.g., H18-22)</dayperiod>
+	<dayperiod code="thehourofsleep" xml:lang="fr">heure du coucher</dayperiod>
+	<dayperiod code="thehourofsleep" xml:lang="nl">voor het slapen</dayperiod>
+	<dayperiod code="thehourofsleep" xml:lang="de">Schlafengehen</dayperiod>
+	<dayperiod code="betweenmeals" xml:lang="en">between meals (from lat. inter cibus)</dayperiod>
+	<dayperiod code="betweenmeals" xml:lang="fr">entre les repas</dayperiod>
+	<dayperiod code="betweenmeals" xml:lang="nl">tussen de maaltijden</dayperiod>
+	<dayperiod code="betweenmeals" xml:lang="de">zwischen den Mahlzeiten </dayperiod>
+	<dayperiod code="betweenlunchanddinner" xml:lang="en">between lunch and dinner</dayperiod>
+	<dayperiod code="betweenlunchanddinner" xml:lang="fr">entre le repas du midi et le repas du soir</dayperiod>
+	<dayperiod code="betweenlunchanddinner" xml:lang="nl">tussen het middageten en het avondeten</dayperiod>
+	<dayperiod code="betweenlunchanddinner" xml:lang="de">zwischen dem Mittagessen und dem Abendessen</dayperiod>
+	<dayperiod code="betweenbreakfastandlunch" xml:lang="en">between breakfast and lunch</dayperiod>
+	<dayperiod code="betweenbreakfastandlunch" xml:lang="fr">entre le petit-déjeuner et le repas du midi</dayperiod>
+	<dayperiod code="betweenbreakfastandlunch" xml:lang="nl">tussen het ontbijt en het middageten</dayperiod>
+	<dayperiod code="betweenbreakfastandlunch" xml:lang="de">zwischen dem Frühstück und dem Mittagessen</dayperiod>
+	<dayperiod code="betweendinnerandsleep" xml:lang="en">between dinner and the hour of sleep</dayperiod>
+	<dayperiod code="betweendinnerandsleep" xml:lang="fr">entre le repas du soir et l'heure du coucher</dayperiod>
+	<dayperiod code="betweendinnerandsleep" xml:lang="nl">tussen het avondeten en het slapen gaan</dayperiod>
+	<dayperiod code="betweendinnerandsleep" xml:lang="de">zwischen dem Abendessen und dem Schlafengehen</dayperiod>
+	<dayperiod code="aftermeal" xml:lang="en">after meal (from lat. post cibus)</dayperiod>
+	<dayperiod code="aftermeal" xml:lang="fr">après le repas</dayperiod>
+	<dayperiod code="aftermeal" xml:lang="nl">na de maaltijd</dayperiod>
+	<dayperiod code="aftermeal" xml:lang="de">nach dem Essen</dayperiod>
+	<dayperiod code="afterlunch" xml:lang="en">after lunch (from lat. post cibus diurnus)</dayperiod>
+	<dayperiod code="afterlunch" xml:lang="fr">après le repas du midi</dayperiod>
+	<dayperiod code="afterlunch" xml:lang="nl">na het middageten</dayperiod>
+	<dayperiod code="afterlunch" xml:lang="de">nach dem Mittagessen</dayperiod>
+	<dayperiod code="afterbreakfast" xml:lang="en">after breakfast (from lat. post cibus matutinus)</dayperiod>
+	<dayperiod code="afterbreakfast" xml:lang="fr">après le petit-déjeuner</dayperiod>
+	<dayperiod code="afterbreakfast" xml:lang="nl">na het ontbijt</dayperiod>
+	<dayperiod code="afterbreakfast" xml:lang="de">nach dem Frühstück</dayperiod>
+	<dayperiod code="afterdinner" xml:lang="en">after dinner (from lat. post cibus vespertinus)</dayperiod>
+	<dayperiod code="afterdinner" xml:lang="fr">après le repas du soir</dayperiod>
+	<dayperiod code="afterdinner" xml:lang="nl">na het avondeten</dayperiod>
+	<dayperiod code="afterdinner" xml:lang="de">nach dem Abendessen</dayperiod>
+	<dayperiod code="duringbreakfast" xml:lang="en">during breakfast</dayperiod>
+	<dayperiod code="duringbreakfast" xml:lang="fr">pendant le petit-déjeuner</dayperiod>
+	<dayperiod code="duringbreakfast" xml:lang="nl">tijdens het ontbijt</dayperiod>
+	<dayperiod code="duringbreakfast" xml:lang="de">während dem Frühstück</dayperiod>
+	<dayperiod code="duringlunch" xml:lang="en">during lunch</dayperiod>
+	<dayperiod code="duringlunch" xml:lang="fr">pendant le repas du midi</dayperiod>
+	<dayperiod code="duringlunch" xml:lang="nl">tijdens het middageten</dayperiod>
+	<dayperiod code="duringlunch" xml:lang="de">während dem Mittagessen</dayperiod>
+	<dayperiod code="duringdinner" xml:lang="en">during dinner</dayperiod>
+	<dayperiod code="duringdinner" xml:lang="fr">pendant le repas du soir</dayperiod>
+	<dayperiod code="duringdinner" xml:lang="nl">tijdens het avondeten</dayperiod>
+	<dayperiod code="duringdinner" xml:lang="de">während dem Abendessen</dayperiod>
+
+	<!--
+		Extracted from https://www.ehealth.fgov.be/standards/kmehr/en/file/xml/993ea310966e8ea62daecf0c8b404eaad2b25698?name=cd-weekday
+		Find:\t<VALUE>\n\t\t<CODE>(.*)</CODE>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n\t</VALUE>
+		Replace:\t<weekday code="$1" xml:lang="$2">$3</weekday>\n\t<weekday code="$1" xml:lang="$4">$5</weekday>\n\t<weekday code="$1" xml:lang="$6">$7</weekday>
+	-->
+	<!-- TODO Add german translations. -->
+	<weekday code="sunday" xml:lang="en">sunday</weekday>
+	<weekday code="sunday" xml:lang="fr">dimanche</weekday>
+	<weekday code="sunday" xml:lang="nl">zondag</weekday>
+	<weekday code="monday" xml:lang="en">monday</weekday>
+	<weekday code="monday" xml:lang="fr">lundi</weekday>
+	<weekday code="monday" xml:lang="nl">maandag</weekday>
+	<weekday code="tuesday" xml:lang="en">tuesday</weekday>
+	<weekday code="tuesday" xml:lang="fr">mardi</weekday>
+	<weekday code="tuesday" xml:lang="nl">dinsdag</weekday>
+	<weekday code="wednesday" xml:lang="en">wednesday</weekday>
+	<weekday code="wednesday" xml:lang="fr">mercredi</weekday>
+	<weekday code="wednesday" xml:lang="nl">woensdag</weekday>
+	<weekday code="thursday" xml:lang="en">thursday</weekday>
+	<weekday code="thursday" xml:lang="fr">jeudi</weekday>
+	<weekday code="thursday" xml:lang="nl">donderdag</weekday>
+	<weekday code="friday" xml:lang="en">friday</weekday>
+	<weekday code="friday" xml:lang="fr">vendredi</weekday>
+	<weekday code="friday" xml:lang="nl">vrijdag</weekday>
+	<weekday code="saturday" xml:lang="en">saturday</weekday>
+	<weekday code="saturday" xml:lang="fr">samedi</weekday>
+	<weekday code="saturday" xml:lang="nl">zaterdag</weekday>
+
+	<!--
+		Extracted from https://www.ehealth.fgov.be/standards/kmehr/en/file/xml/30d341e0ee432a0313c343444688f5555fef5081?name=cd-administrationunit
+		Find:\t<VALUE>\n\t\t<CODE>(.*)</CODE>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n(\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n)?\t</VALUE>
+		Replace:\t<administrationunit code="$1" xml:lang="$2">$3</administrationunit>\n\t<administrationunit code="$1" xml:lang="$4">$5</administrationunit>\n\t<administrationunit code="$1" xml:lang="$6">$7</administrationunit>\n\t<administrationunit code="$1" xml:lang="$9">$10</administrationunit>
+		Removed all incomplete entries afterwards: Find:.*lang="".*\n
+		Also replaced all occurences of " (deprecated)".
+	-->
+	<!-- TODO Add missing german translations. -->
+	<administrationunit code="00001" xml:lang="en">5 ml</administrationunit>
+	<administrationunit code="00001" xml:lang="fr">5 ml</administrationunit>
+	<administrationunit code="00001" xml:lang="nl">Koffielepel (5 ml)</administrationunit>
+	<administrationunit code="00001" xml:lang="de">5 ml</administrationunit>
+	<administrationunit code="00002" xml:lang="en">amp.</administrationunit>
+	<administrationunit code="00002" xml:lang="fr">amp.</administrationunit>
+	<administrationunit code="00002" xml:lang="nl">ampule</administrationunit>
+	<administrationunit code="00002" xml:lang="de">Ampulle</administrationunit>
+	<administrationunit code="00003" xml:lang="en">applic.</administrationunit>
+	<administrationunit code="00003" xml:lang="fr">applic.</administrationunit>
+	<administrationunit code="00003" xml:lang="nl">aanbrengen</administrationunit>
+	<administrationunit code="00003" xml:lang="de">anwenden</administrationunit>
+	<administrationunit code="00004" xml:lang="en">caps.</administrationunit>
+	<administrationunit code="00004" xml:lang="fr">caps.</administrationunit>
+	<administrationunit code="00004" xml:lang="nl">capsule</administrationunit>
+	<administrationunit code="00004" xml:lang="de">Kapsel</administrationunit>
+	<administrationunit code="00005" xml:lang="en">compr.</administrationunit>
+	<administrationunit code="00005" xml:lang="fr">compr.</administrationunit>
+	<administrationunit code="00005" xml:lang="nl">tablet</administrationunit>
+	<administrationunit code="00005" xml:lang="de">Tablette</administrationunit>
+	<administrationunit code="00006" xml:lang="en">dosis</administrationunit>
+	<administrationunit code="00006" xml:lang="nl">dose</administrationunit>
+	<administrationunit code="00006" xml:lang="fr">dose</administrationunit>
+	<administrationunit code="00006" xml:lang="de">Dosis</administrationunit>
+	<administrationunit code="00007" xml:lang="en">drops</administrationunit>
+	<administrationunit code="00007" xml:lang="nl">druppels</administrationunit>
+	<administrationunit code="00007" xml:lang="fr">gouttes</administrationunit>
+	<administrationunit code="00007" xml:lang="de">Tropfen</administrationunit>
+	<administrationunit code="00008" xml:lang="en">flac.</administrationunit>
+	<administrationunit code="00008" xml:lang="fr">flac.</administrationunit>
+	<administrationunit code="00008" xml:lang="nl">flesje</administrationunit>
+	<administrationunit code="00008" xml:lang="de">Fläschchen</administrationunit>
+	<administrationunit code="00009" xml:lang="en">implant</administrationunit>
+	<administrationunit code="00009" xml:lang="fr">implant</administrationunit>
+	<administrationunit code="00009" xml:lang="nl">implantaat</administrationunit>
+	<administrationunit code="00009" xml:lang="de">Implantat</administrationunit>
+	<administrationunit code="00010" xml:lang="en">perfusion</administrationunit>
+	<administrationunit code="00010" xml:lang="nl">infuus</administrationunit>
+	<administrationunit code="00010" xml:lang="fr">perfusion</administrationunit>
+	<administrationunit code="00010" xml:lang="de">Infusion</administrationunit>
+	<administrationunit code="00011" xml:lang="en">inhal.</administrationunit>
+	<administrationunit code="00011" xml:lang="fr">inhalation</administrationunit>
+	<administrationunit code="00011" xml:lang="nl">inhalatie</administrationunit>
+	<administrationunit code="00011" xml:lang="de">Inhalation</administrationunit>
+	<administrationunit code="00012" xml:lang="en">insert</administrationunit>
+	<administrationunit code="00012" xml:lang="fr">insert</administrationunit>
+	<administrationunit code="00012" xml:lang="nl">inbrengen</administrationunit>
+	<administrationunit code="00012" xml:lang="de">Einstechen</administrationunit>
+	<administrationunit code="00013" xml:lang="en">chewing gum</administrationunit>
+	<administrationunit code="00013" xml:lang="nl">kauwgom</administrationunit>
+	<administrationunit code="00013" xml:lang="fr">gommes à mâcher</administrationunit>
+	<administrationunit code="00013" xml:lang="de">Kaugummi</administrationunit>
+	<administrationunit code="00014" xml:lang="en">compress(es)</administrationunit>
+	<administrationunit code="00014" xml:lang="nl">kompres(sen)</administrationunit>
+	<administrationunit code="00014" xml:lang="fr">compres(ses)</administrationunit>
+	<administrationunit code="00014" xml:lang="de">Kompresse(n)</administrationunit>
+	<administrationunit code="00015" xml:lang="en">lav.</administrationunit>
+	<administrationunit code="00015" xml:lang="fr">lavement</administrationunit>
+	<administrationunit code="00015" xml:lang="nl">lavement</administrationunit>
+	<administrationunit code="00015" xml:lang="de">Einlauf</administrationunit>
+	<administrationunit code="00016" xml:lang="en">ml</administrationunit>
+	<administrationunit code="00016" xml:lang="fr">ml</administrationunit>
+	<administrationunit code="00016" xml:lang="nl">ml</administrationunit>
+	<administrationunit code="00016" xml:lang="de">ml</administrationunit>
+	<administrationunit code="00017" xml:lang="en">ov.</administrationunit>
+	<administrationunit code="00017" xml:lang="fr">ov.</administrationunit>
+	<administrationunit code="00017" xml:lang="nl">ovule</administrationunit>
+	<administrationunit code="00017" xml:lang="de">Ov.</administrationunit>
+	<administrationunit code="00018" xml:lang="en">pearl(s)</administrationunit>
+	<administrationunit code="00018" xml:lang="nl">parel(s)</administrationunit>
+	<administrationunit code="00018" xml:lang="fr">perle(s)</administrationunit>
+	<administrationunit code="00018" xml:lang="de">Perle(n)</administrationunit>
+	<administrationunit code="00019" xml:lang="en">pastille</administrationunit>
+	<administrationunit code="00019" xml:lang="fr">pastille</administrationunit>
+	<administrationunit code="00019" xml:lang="nl">pastille</administrationunit>
+	<administrationunit code="00019" xml:lang="de">Pastille</administrationunit>
+	<administrationunit code="00020" xml:lang="en">patch</administrationunit>
+	<administrationunit code="00020" xml:lang="fr">patch</administrationunit>
+	<administrationunit code="00020" xml:lang="nl">pleister</administrationunit>
+	<administrationunit code="00020" xml:lang="de">Pflaster</administrationunit>
+	<administrationunit code="00021" xml:lang="en">cart.</administrationunit>
+	<administrationunit code="00021" xml:lang="fr">patr.</administrationunit>
+	<administrationunit code="00021" xml:lang="nl">patroon</administrationunit>
+	<administrationunit code="00021" xml:lang="de">cart</administrationunit>
+	<administrationunit code="00022" xml:lang="en">pen</administrationunit>
+	<administrationunit code="00022" xml:lang="nl">pen</administrationunit>
+	<administrationunit code="00022" xml:lang="fr">stylo</administrationunit>
+	<administrationunit code="00022" xml:lang="de">Pen</administrationunit>
+	<administrationunit code="00023" xml:lang="en">puff(s)</administrationunit>
+	<administrationunit code="00023" xml:lang="fr">puff(s)</administrationunit>
+	<administrationunit code="00023" xml:lang="nl">puff(s)</administrationunit>
+	<administrationunit code="00023" xml:lang="de">Puff(s)</administrationunit>
+	<administrationunit code="00024" xml:lang="en">sponge</administrationunit>
+	<administrationunit code="00024" xml:lang="nl">spons</administrationunit>
+	<administrationunit code="00024" xml:lang="fr">éponge</administrationunit>
+	<administrationunit code="00024" xml:lang="de">Schwamm</administrationunit>
+	<administrationunit code="00025" xml:lang="en">stylo</administrationunit>
+	<administrationunit code="00025" xml:lang="fr">stylo</administrationunit>
+	<administrationunit code="00025" xml:lang="nl">stylo</administrationunit>
+	<administrationunit code="00025" xml:lang="de">Stylo</administrationunit>
+	<administrationunit code="00026" xml:lang="en">suppo</administrationunit>
+	<administrationunit code="00026" xml:lang="fr">suppo</administrationunit>
+	<administrationunit code="00026" xml:lang="nl">zetpil</administrationunit>
+	<administrationunit code="00026" xml:lang="de">Suppo</administrationunit>
+	<administrationunit code="00027" xml:lang="en">tube</administrationunit>
+	<administrationunit code="00027" xml:lang="fr">tube</administrationunit>
+	<administrationunit code="00027" xml:lang="nl">tube</administrationunit>
+	<administrationunit code="00027" xml:lang="de">Tube</administrationunit>
+	<administrationunit code="00028" xml:lang="en">wick</administrationunit>
+	<administrationunit code="00028" xml:lang="nl">wiek</administrationunit>
+	<administrationunit code="00028" xml:lang="fr">mèche</administrationunit>
+	<administrationunit code="00028" xml:lang="de">Docht</administrationunit>
+	<administrationunit code="00029" xml:lang="en">bag</administrationunit>
+	<administrationunit code="00029" xml:lang="nl">zak</administrationunit>
+	<administrationunit code="00029" xml:lang="fr">sac</administrationunit>
+	<administrationunit code="00029" xml:lang="de">Beutel</administrationunit>
+	<administrationunit code="00030" xml:lang="en">bag(s)</administrationunit>
+	<administrationunit code="00030" xml:lang="nl">zakje(s)</administrationunit>
+	<administrationunit code="00030" xml:lang="fr">sachet(s)</administrationunit>
+	<administrationunit code="00030" xml:lang="de">Beutel</administrationunit>
+	<administrationunit code="cm" xml:lang="en">centimeter</administrationunit>
+	<administrationunit code="cm" xml:lang="fr">centimètre</administrationunit>
+	<administrationunit code="cm" xml:lang="nl">centimeter</administrationunit>
+	<administrationunit code="cm" xml:lang="de">Zentimeter</administrationunit>
+	<administrationunit code="dropsperminute" xml:lang="en">drops per minute</administrationunit>
+	<administrationunit code="dropsperminute" xml:lang="fr">goutes par minute</administrationunit>
+	<administrationunit code="dropsperminute" xml:lang="nl">druppels per minuut</administrationunit>
+	<administrationunit code="dropsperminute" xml:lang="de">Tropfen pro Minute</administrationunit>
+	<administrationunit code="gm" xml:lang="en">gram</administrationunit>
+	<administrationunit code="gm" xml:lang="fr">gramme</administrationunit>
+	<administrationunit code="gm" xml:lang="nl">gram</administrationunit>
+	<administrationunit code="gm" xml:lang="de">Gramm</administrationunit>
+	<administrationunit code="internationalunits" xml:lang="en">international units</administrationunit>
+	<administrationunit code="internationalunits" xml:lang="fr">unités internationales</administrationunit>
+	<administrationunit code="internationalunits" xml:lang="nl">internationale eenheden</administrationunit>
+	<administrationunit code="internationalunits" xml:lang="de">Internationale Einheiten</administrationunit>
+	<administrationunit code="mck/h" xml:lang="en">microgram per hour</administrationunit>
+	<administrationunit code="mck/h" xml:lang="fr">microgramme par heure</administrationunit>
+	<administrationunit code="mck/h" xml:lang="nl">microgram per uur</administrationunit>
+	<administrationunit code="mck/h" xml:lang="de">Mikrogramm pro Stunde</administrationunit>
+	<administrationunit code="mck/kg/minute" xml:lang="en">microgram per kilogram per minute</administrationunit>
+	<administrationunit code="mck/kg/minute" xml:lang="fr">microgramme par kilogramme par minute</administrationunit>
+	<administrationunit code="mck/kg/minute" xml:lang="nl">microgram per kilogram per minuut</administrationunit>
+	<administrationunit code="mck/kg/minute" xml:lang="de">Mikrogramm pro Kilogramm pro Minute</administrationunit>
+	<administrationunit code="measure" xml:lang="en">measure</administrationunit>
+	<administrationunit code="measure" xml:lang="fr">mesure</administrationunit>
+	<administrationunit code="measure" xml:lang="nl">maat</administrationunit>
+	<administrationunit code="measure" xml:lang="de">Maß</administrationunit>
+	<administrationunit code="mg/h" xml:lang="en">milligram per hour</administrationunit>
+	<administrationunit code="mg/h" xml:lang="fr">milligramme par heure</administrationunit>
+	<administrationunit code="mg/h" xml:lang="nl">milligram per uur</administrationunit>
+	<administrationunit code="mg/h" xml:lang="de">Miligramm pro Stunde</administrationunit>
+	<administrationunit code="ml/h" xml:lang="en">milliliter per hour</administrationunit>
+	<administrationunit code="ml/h" xml:lang="fr">millilitre par heure</administrationunit>
+	<administrationunit code="ml/h" xml:lang="nl">milliliter per uur</administrationunit>
+	<administrationunit code="ml/h" xml:lang="de">Milliliter pro Stunde</administrationunit>
+	<administrationunit code="tbl" xml:lang="en">tablespoon</administrationunit>
+	<administrationunit code="tbl" xml:lang="fr">cuillère à soupe</administrationunit>
+	<administrationunit code="tbl" xml:lang="nl">eetlepel</administrationunit>
+	<administrationunit code="tbl" xml:lang="de">Esslöffel</administrationunit>
+	<administrationunit code="tsp" xml:lang="en">teaspoon</administrationunit>
+	<administrationunit code="tsp" xml:lang="fr">cuillère à café</administrationunit>
+	<administrationunit code="tsp" xml:lang="nl">koffielepel</administrationunit>
+	<administrationunit code="tsp" xml:lang="de">Kaffeelöffel</administrationunit>
+	<administrationunit code="unt/h" xml:lang="en">units per hour</administrationunit>
+	<administrationunit code="unt/h" xml:lang="fr">unités par heure</administrationunit>
+	<administrationunit code="unt/h" xml:lang="nl">eenheden per uur</administrationunit>
+	<administrationunit code="unt/h" xml:lang="de">Einheiten pro Stunde</administrationunit>
+	<administrationunit code="mg" xml:lang="en">milligram</administrationunit>
+	<administrationunit code="mg" xml:lang="fr">miligramme</administrationunit>
+	<administrationunit code="mg" xml:lang="nl">miligram</administrationunit>
+	<administrationunit code="mg" xml:lang="de">Milligramm</administrationunit>
+	<administrationunit code="mg/ml" xml:lang="en">milligram per milliliter</administrationunit>
+	<administrationunit code="mg/ml" xml:lang="fr">milligramme par millimètre</administrationunit>
+	<administrationunit code="mg/ml" xml:lang="nl">miligram per milimeter</administrationunit>
+	<administrationunit code="mg/ml" xml:lang="de">Milligramm pro Millimeter</administrationunit>
+	<administrationunit code="meq" xml:lang="en">milli-equivalent</administrationunit>
+	<administrationunit code="meq" xml:lang="fr">milli-equivalent</administrationunit>
+	<administrationunit code="meq" xml:lang="nl">milli-equivalent</administrationunit>
+	<administrationunit code="miu" xml:lang="en">miu</administrationunit>
+	<administrationunit code="miu" xml:lang="fr">miu</administrationunit>
+	<administrationunit code="miu" xml:lang="nl">miu</administrationunit>
+	<administrationunit code="iu" xml:lang="en">iu</administrationunit>
+	<administrationunit code="iu" xml:lang="fr">unités internationales</administrationunit>
+	<administrationunit code="iu" xml:lang="nl">internationale eenheden</administrationunit>
+	<administrationunit code="mmol" xml:lang="en">millimol</administrationunit>
+	<administrationunit code="mmol" xml:lang="fr">millimol</administrationunit>
+	<administrationunit code="mmol" xml:lang="nl">millimol</administrationunit>
+	<administrationunit code="effervescent-tablet" xml:lang="en">effervescent tablet</administrationunit>
+	<administrationunit code="effervescent-tablet" xml:lang="fr">comprimé effervescent</administrationunit>
+	<administrationunit code="effervescent-tablet" xml:lang="nl">bruistablet</administrationunit>
+	<administrationunit code="micrograms" xml:lang="en">micrograms</administrationunit>
+	<administrationunit code="micrograms" xml:lang="fr">microgrammes</administrationunit>
+	<administrationunit code="micrograms" xml:lang="nl">microgram</administrationunit>
+	<administrationunit code="bandage" xml:lang="en">bandage</administrationunit>
+	<administrationunit code="bandage" xml:lang="fr">bandage</administrationunit>
+	<administrationunit code="bandage" xml:lang="nl">verband</administrationunit>
+	<administrationunit code="piece" xml:lang="en">piece</administrationunit>
+	<administrationunit code="piece" xml:lang="fr">pièce</administrationunit>
+	<administrationunit code="piece" xml:lang="nl">stuk</administrationunit>
+	<administrationunit code="box" xml:lang="en">box</administrationunit>
+	<administrationunit code="box" xml:lang="fr">vaporisateur</administrationunit>
+	<administrationunit code="box" xml:lang="nl">verstuiving</administrationunit>
+	<administrationunit code="liter" xml:lang="en">liter</administrationunit>
+	<administrationunit code="liter" xml:lang="fr">litre</administrationunit>
+	<administrationunit code="liter" xml:lang="nl">liter</administrationunit>
+	<administrationunit code="syringe" xml:lang="en">syringe</administrationunit>
+	<administrationunit code="syringe" xml:lang="fr">seringue</administrationunit>
+	<administrationunit code="syringe" xml:lang="nl">spuit</administrationunit>
+	<administrationunit code="ampoule" xml:lang="en">ampoule</administrationunit>
+	<administrationunit code="ampoule" xml:lang="fr">ampoule</administrationunit>
+	<administrationunit code="ampoule" xml:lang="nl">ampul</administrationunit>
+	<administrationunit code="bottle" xml:lang="en">bottle</administrationunit>
+	<administrationunit code="bottle" xml:lang="fr">fiole</administrationunit>
+	<administrationunit code="bottle" xml:lang="nl">fles</administrationunit>
+	<administrationunit code="syringe-ampoule" xml:lang="en">syringe ampoule</administrationunit>
+	<administrationunit code="syringe-ampoule" xml:lang="fr">ampoule de seringue</administrationunit>
+	<administrationunit code="syringe-ampoule" xml:lang="nl">spuitampul</administrationunit>
+
+	<!--
+		Extracted from https://www.ehealth.fgov.be/standards/kmehr/en/file/xml/a99a6543593a27ba65ec39e482d31040994b84ee?name=cd-periodicity
+		Find:\t<VALUE>\n\t\t<CODE>(.*)</CODE>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n\t\t<DESCRIPTION L="(..)">(.*)</DESCRIPTION>\n\t</VALUE>
+		Replace:\t<weekday code="$1" xml:lang="$2">$3</weekday>\n\t<weekday code="$1" xml:lang="$4">$5</weekday>\n\t<weekday code="$1" xml:lang="$6">$7</weekday>
+	-->
+	<!-- TODO Add german translations. -->
+	<periodicity code="UH" xml:lang="en">per half hour</periodicity>
+	<periodicity code="UH" xml:lang="fr">par demi-heure</periodicity>
+	<periodicity code="UH" xml:lang="nl">om het half uur</periodicity>
+	<periodicity code="U" xml:lang="en">per hour</periodicity>
+	<periodicity code="U" xml:lang="fr">par heure</periodicity>
+	<periodicity code="U" xml:lang="nl">om het uur</periodicity>
+	<periodicity code="UT" xml:lang="en">per 2 hours</periodicity>
+	<periodicity code="UT" xml:lang="fr">par 2 heures</periodicity>
+	<periodicity code="UT" xml:lang="nl">om de 2 uren</periodicity>
+	<periodicity code="UD" xml:lang="en">per 3 hours</periodicity>
+	<periodicity code="UD" xml:lang="fr">par 3 heures</periodicity>
+	<periodicity code="UD" xml:lang="nl">om de 3 uren</periodicity>
+	<periodicity code="UV" xml:lang="en">per 4 hours</periodicity>
+	<periodicity code="UV" xml:lang="fr">par 4 heures</periodicity>
+	<periodicity code="UV" xml:lang="nl">om de 4 uren</periodicity>
+	<periodicity code="UQ" xml:lang="en">per 5 hours</periodicity>
+	<periodicity code="UQ" xml:lang="fr">par 5 heures</periodicity>
+	<periodicity code="UQ" xml:lang="nl">om de 5 uren</periodicity>
+	<periodicity code="UZ" xml:lang="en">per 6 hours</periodicity>
+	<periodicity code="UZ" xml:lang="fr">par 6 heures</periodicity>
+	<periodicity code="UZ" xml:lang="nl">om de 6 uren</periodicity>
+	<periodicity code="US" xml:lang="en">per 7 hours</periodicity>
+	<periodicity code="US" xml:lang="fr">par 7 heures</periodicity>
+	<periodicity code="US" xml:lang="nl">om de 7 uren</periodicity>
+	<periodicity code="UA" xml:lang="en">per 8 hours</periodicity>
+	<periodicity code="UA" xml:lang="fr">par 8 heures</periodicity>
+	<periodicity code="UA" xml:lang="nl">om de 8 uren</periodicity>
+	<periodicity code="UN" xml:lang="en">per 9 hours</periodicity>
+	<periodicity code="UN" xml:lang="fr">par 9 heures</periodicity>
+	<periodicity code="UN" xml:lang="nl">om de 9 uren</periodicity>
+	<periodicity code="UX" xml:lang="en">per 10 hours</periodicity>
+	<periodicity code="UX" xml:lang="fr">par 10 heures</periodicity>
+	<periodicity code="UX" xml:lang="nl">om de 10 uren</periodicity>
+	<periodicity code="UE" xml:lang="en">per 11 hours</periodicity>
+	<periodicity code="UE" xml:lang="fr">par 11 heures</periodicity>
+	<periodicity code="UE" xml:lang="nl">om de 11 uren</periodicity>
+	<periodicity code="UW" xml:lang="en">per 12 hours</periodicity>
+	<periodicity code="UW" xml:lang="fr">par 12 heures</periodicity>
+	<periodicity code="UW" xml:lang="nl">om de 12 uren</periodicity>
+	<periodicity code="D" xml:lang="en">per day</periodicity>
+	<periodicity code="D" xml:lang="fr">par jour</periodicity>
+	<periodicity code="D" xml:lang="nl">dagelijks</periodicity>
+	<periodicity code="DT" xml:lang="en">per 2 days</periodicity>
+	<periodicity code="DT" xml:lang="fr">par 2 jours</periodicity>
+	<periodicity code="DT" xml:lang="nl">om de 2 dagen</periodicity>
+	<periodicity code="O1" xml:lang="en">every 2 days</periodicity>
+	<periodicity code="O1" xml:lang="fr">tous les 2 jours</periodicity>
+	<periodicity code="O1" xml:lang="nl">om de 2 dagen</periodicity>
+	<periodicity code="DD" xml:lang="en">per 3 days</periodicity>
+	<periodicity code="DD" xml:lang="fr">par 3 jours</periodicity>
+	<periodicity code="DD" xml:lang="nl">om de 3 dagen</periodicity>
+	<periodicity code="DV" xml:lang="en">per 4 days</periodicity>
+	<periodicity code="DV" xml:lang="fr">par 4 jours</periodicity>
+	<periodicity code="DV" xml:lang="nl">om de 4 dagen</periodicity>
+	<periodicity code="DQ" xml:lang="en">per 5 days</periodicity>
+	<periodicity code="DQ" xml:lang="fr">par 5 jours</periodicity>
+	<periodicity code="DQ" xml:lang="nl">om de 5 dagen</periodicity>
+	<periodicity code="DZ" xml:lang="en">per 6 days</periodicity>
+	<periodicity code="DZ" xml:lang="fr">par 6 jours</periodicity>
+	<periodicity code="DZ" xml:lang="nl">om de 6 dagen</periodicity>
+	<periodicity code="W" xml:lang="en">per 7 days</periodicity>
+	<periodicity code="W" xml:lang="fr">par semaine</periodicity>
+	<periodicity code="W" xml:lang="nl">wekelijks</periodicity>
+	<periodicity code="DA" xml:lang="en">per 8 days</periodicity>
+	<periodicity code="DA" xml:lang="fr">par 8 jours</periodicity>
+	<periodicity code="DA" xml:lang="nl">om de 8 dagen</periodicity>
+	<periodicity code="DN" xml:lang="en">per 9 days</periodicity>
+	<periodicity code="DN" xml:lang="fr">par 9 jours</periodicity>
+	<periodicity code="DN" xml:lang="nl">om de 9 dagen</periodicity>
+	<periodicity code="DX" xml:lang="en">per 10 days</periodicity>
+	<periodicity code="DX" xml:lang="fr">par 10 jours</periodicity>
+	<periodicity code="DX" xml:lang="nl">om de 10 dagen</periodicity>
+	<periodicity code="DE" xml:lang="en">per 11 days</periodicity>
+	<periodicity code="DE" xml:lang="fr">par 11 jours</periodicity>
+	<periodicity code="DE" xml:lang="nl">om de 11 dagen</periodicity>
+	<periodicity code="DW" xml:lang="en">per 12 days</periodicity>
+	<periodicity code="DW" xml:lang="fr">par 12 jours</periodicity>
+	<periodicity code="DW" xml:lang="nl">om de 12 dagen</periodicity>
+	<periodicity code="WT" xml:lang="en">per 2 weeks</periodicity>
+	<periodicity code="WT" xml:lang="fr">par 2 semaines</periodicity>
+	<periodicity code="WT" xml:lang="nl">om de 2 weken</periodicity>
+	<periodicity code="WD" xml:lang="en">per 3 weeks</periodicity>
+	<periodicity code="WD" xml:lang="fr">par 3 semaines</periodicity>
+	<periodicity code="WD" xml:lang="nl">om de 3 weken</periodicity>
+	<periodicity code="WV" xml:lang="en">per 4 weeks</periodicity>
+	<periodicity code="WV" xml:lang="fr">par 4 semaines</periodicity>
+	<periodicity code="WV" xml:lang="nl">om de 4 weken</periodicity>
+	<periodicity code="M" xml:lang="en">per month</periodicity>
+	<periodicity code="M" xml:lang="fr">par mois</periodicity>
+	<periodicity code="M" xml:lang="nl">maandelijks</periodicity>
+	<periodicity code="WQ" xml:lang="en">per 5 weeks</periodicity>
+	<periodicity code="WQ" xml:lang="fr">par 5 semaines</periodicity>
+	<periodicity code="WQ" xml:lang="nl">om de 5 weken</periodicity>
+	<periodicity code="WZ" xml:lang="en">per 6 weeks</periodicity>
+	<periodicity code="WZ" xml:lang="fr">par 6 semaines</periodicity>
+	<periodicity code="WZ" xml:lang="nl">om de 6 weken</periodicity>
+	<periodicity code="WS" xml:lang="en">per 7 weeks</periodicity>
+	<periodicity code="WS" xml:lang="fr">par 7 semaines</periodicity>
+	<periodicity code="WS" xml:lang="nl">om de 7 weken</periodicity>
+	<periodicity code="WA" xml:lang="en">per 8 weeks</periodicity>
+	<periodicity code="WA" xml:lang="fr">par 8 semaines</periodicity>
+	<periodicity code="WA" xml:lang="nl">om de 8 weken</periodicity>
+	<periodicity code="MT" xml:lang="en">per 2 months</periodicity>
+	<periodicity code="MT" xml:lang="fr">par 2 mois</periodicity>
+	<periodicity code="MT" xml:lang="nl">om de 2 maanden</periodicity>
+	<periodicity code="WN" xml:lang="en">per 9 weeks</periodicity>
+	<periodicity code="WN" xml:lang="fr">par 9 semaines</periodicity>
+	<periodicity code="WN" xml:lang="nl">om de 9 weken</periodicity>
+	<periodicity code="WX" xml:lang="en">per 10 weeks</periodicity>
+	<periodicity code="WX" xml:lang="fr">par 10 semaines</periodicity>
+	<periodicity code="WX" xml:lang="nl">om de 10 weken</periodicity>
+	<periodicity code="WE" xml:lang="en">per 11 weeks</periodicity>
+	<periodicity code="WE" xml:lang="fr">par 11 semaines</periodicity>
+	<periodicity code="WE" xml:lang="nl">om de 11 weken</periodicity>
+	<periodicity code="WW" xml:lang="en">per 12 weeks</periodicity>
+	<periodicity code="WW" xml:lang="fr">par 12 semaines</periodicity>
+	<periodicity code="WW" xml:lang="nl">om de 12 weken</periodicity>
+	<periodicity code="MD" xml:lang="en">per 3 months</periodicity>
+	<periodicity code="MD" xml:lang="fr">par 3 mois</periodicity>
+	<periodicity code="MD" xml:lang="nl">om de 3 maanden</periodicity>
+	<periodicity code="MV" xml:lang="en">per 4 months</periodicity>
+	<periodicity code="MV" xml:lang="fr">par 4 mois</periodicity>
+	<periodicity code="MV" xml:lang="nl">om de 4 maanden</periodicity>
+	<periodicity code="MQ" xml:lang="en">per 5 months</periodicity>
+	<periodicity code="MQ" xml:lang="fr">par 5 mois</periodicity>
+	<periodicity code="MQ" xml:lang="nl">om de 5 maanden</periodicity>
+	<periodicity code="WP" xml:lang="en">per 24 weeks</periodicity>
+	<periodicity code="WP" xml:lang="fr">par 24 semaines</periodicity>
+	<periodicity code="WP" xml:lang="nl">om de 24 weken</periodicity>
+	<periodicity code="JH2" xml:lang="en">per half year</periodicity>
+	<periodicity code="JH2" xml:lang="fr">par demi-année</periodicity>
+	<periodicity code="JH2" xml:lang="nl">halfjaarlijks</periodicity>
+	<periodicity code="MZ2" xml:lang="en">per 6 months</periodicity>
+	<periodicity code="MZ2" xml:lang="fr">par 6 mois</periodicity>
+	<periodicity code="MZ2" xml:lang="nl">om de 6 maanden</periodicity>
+	<periodicity code="MS" xml:lang="en">per 7 months</periodicity>
+	<periodicity code="MS" xml:lang="fr">par 7 mois</periodicity>
+	<periodicity code="MS" xml:lang="nl">om de 7 maanden</periodicity>
+	<periodicity code="MA" xml:lang="en">per 8 months</periodicity>
+	<periodicity code="MA" xml:lang="fr">par 8 mois</periodicity>
+	<periodicity code="MA" xml:lang="nl">om de 8 maanden</periodicity>
+	<periodicity code="MN" xml:lang="en">per 9 months</periodicity>
+	<periodicity code="MN" xml:lang="fr">par 9 mois</periodicity>
+	<periodicity code="MN" xml:lang="nl">om de 9 maanden</periodicity>
+	<periodicity code="MX" xml:lang="en">per 10 months</periodicity>
+	<periodicity code="MX" xml:lang="fr">par 10 mois</periodicity>
+	<periodicity code="MX" xml:lang="nl">om de 10 maanden</periodicity>
+	<periodicity code="ME" xml:lang="en">per 11 months</periodicity>
+	<periodicity code="ME" xml:lang="fr">par 11 mois</periodicity>
+	<periodicity code="ME" xml:lang="nl">om de 11 maanden</periodicity>
+	<periodicity code="J" xml:lang="en">per Year</periodicity>
+	<periodicity code="J" xml:lang="fr">par an</periodicity>
+	<periodicity code="J" xml:lang="nl">jaarlijks</periodicity>
+	<periodicity code="MC" xml:lang="en">per 18 months</periodicity>
+	<periodicity code="MC" xml:lang="fr">par 18 mois</periodicity>
+	<periodicity code="MC" xml:lang="nl">om de 18 maanden</periodicity>
+	<periodicity code="JT" xml:lang="en">per 2 years</periodicity>
+	<periodicity code="JT" xml:lang="fr">par 2 années</periodicity>
+	<periodicity code="JT" xml:lang="nl">om de 2 jaar</periodicity>
+	<periodicity code="JD" xml:lang="en">per 3 years</periodicity>
+	<periodicity code="JD" xml:lang="nl">par 3 années</periodicity>
+	<periodicity code="JD" xml:lang="nl">om de 3 jaar</periodicity>
+	<periodicity code="JV" xml:lang="en">per 4 years</periodicity>
+	<periodicity code="JV" xml:lang="fr">par 4 années</periodicity>
+	<periodicity code="JV" xml:lang="nl">om de 4 jaar</periodicity>
+	<periodicity code="JQ" xml:lang="en">per 5 years</periodicity>
+	<periodicity code="JQ" xml:lang="fr">par 5 années</periodicity>
+	<periodicity code="JQ" xml:lang="nl">om de 5 jaar</periodicity>
+	<periodicity code="JZ" xml:lang="en">per 6 years</periodicity>
+	<periodicity code="JZ" xml:lang="fr">par 6 années</periodicity>
+	<periodicity code="JZ" xml:lang="nl">om de 6 jaar</periodicity>
+	<periodicity code="ondemand" xml:lang="en">On demand</periodicity>
+	<periodicity code="ondemand" xml:lang="fr">Sur demande</periodicity>
+	<periodicity code="ondemand" xml:lang="nl">Op aanvraag</periodicity>
+</i18n>
