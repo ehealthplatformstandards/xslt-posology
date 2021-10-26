@@ -9,7 +9,7 @@
 
 	<xsl:param name="lang" select="'nl'"/>
 
-	<xsl:variable name="deprecatedPeriodicities" select="';U;UA;UD;UH;UT;UV;UW;UZ;'"/>
+	<xsl:variable name="deprecatedPeriodicities" select="';U;UA;UD;UE;UH;UN;UQ;US;UT;UV;UW;UX;UZ;ondemand;'"/>
 	<xsl:variable name="i18n" select="document('complex-regimen-i18n.xml')/i18n"/>
 
 	<xsl:template match="node()|@*">
